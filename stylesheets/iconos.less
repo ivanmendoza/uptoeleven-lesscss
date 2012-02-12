@@ -1,0 +1,39 @@
+/*!
+*
+* SET DE ICONOS TIME
+*
+*/
+
+@icono_ancho:	60px;
+@icono_alto:	60px;
+
+#iconos{
+	.forma{
+		display: block;
+		width: @icono_ancho;
+		height: @icono_alto;
+		margin-top: .3em;
+		background:url("@{dirImages}/iconos.png") no-repeat 0 0;
+	}
+	
+	.elegir(@x:0, @y:0){
+		// Copia la forma basica del icono
+		#iconos .forma; 
+		
+		// calcula la posicion del icono en base a las medidas
+		background-position:-@icono_ancho*@x -@icono_alto*@y; 
+	}
+	
+	.izquierda{
+		float: left;
+		clear: none;
+		margin-right:.5em;
+	}
+	
+	.derecha{
+		float: right;
+		clear: none;
+		margin-left: .5em;
+	}
+}
+

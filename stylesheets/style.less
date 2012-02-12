@@ -1,0 +1,108 @@
+/*!
+*
+* LessCSS - SPRITES CSS
+* Test Driver: http://github.com/ivanmendoza
+*
+*/
+
+// simpless:!minify
+
+//
+// GENERAL
+//
+@dirImages: "../images";
+@maxWidth: 980px;
+@defaulPageMargin:1em;
+
+//
+// FONTS
+//
+@fontBase: 'gill sans', verdana, sans-serif;
+@fontHeadings: verdana, sans-serif;
+@fontControls: tahoma,sans-serif;
+@fontCode:'Lucida Console', 'Consolas', 'Courier New', monospace;
+
+//
+// COLORS
+//
+@cBg: #eee; //Background
+@cBgContainer: #fff; //Background content
+@cFg: #000; //Text
+
+//
+// IMPORTS
+//
+
+@import "_foundation.less";
+@import "iconos.less";
+
+// STYLES
+body{
+	font: 16px/1.1 @fontBase;
+	background: @cBg;
+	color: @cFg;
+}
+.columns .panel{
+	margin:1em 0;
+	padding:1em;
+}
+
+// TEXT
+h1.supertitle{
+	font-weight:bold;
+	line-height:1.1;
+	text-transform:uppercase;
+}
+h2.tagline,
+h3.tagline{
+	font-weight:bold;
+	font-size:.75em;
+	line-height:1.2;
+	text-transform:uppercase;
+}
+
+// ICONOS
+
+p{
+	font-family:@fontBase;
+	display:block;
+	overflow:hidden;
+	margin:1em;
+	border:solid 1px #ccc;
+	padding:1em;
+	border-radius:4px;
+}
+
+.tiempo1 .icono{
+	#iconos .elegir(0, 0);
+	#iconos .izquierda;
+}
+.tiempo2 .icono{
+	#iconos .elegir(1, 0);
+	#iconos .izquierda;
+}
+.tiempo3 .icono{
+	#iconos .elegir(2, 0);
+	#iconos .izquierda;
+}
+.tiempo4 .icono{
+	#iconos .elegir(3, 0);
+	#iconos .izquierda;
+}
+
+.dia1 .icono{
+	#iconos .elegir(0, 1);
+	#iconos .derecha;
+}
+.dia2 .icono{
+	#iconos .elegir(2, 1);
+	#iconos .derecha;
+}
+.dia3 .icono{
+	#iconos .elegir(3, 1);
+	#iconos .derecha;
+}
+.dia4 .icono{
+	#iconos .elegir(4, 1);
+	#iconos .derecha;
+}
