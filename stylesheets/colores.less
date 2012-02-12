@@ -1,0 +1,80 @@
+/*!
+*
+* Manipulacion de colores
+*
+*/
+
+div.panel{overflow:hidden;}
+
+@rojo: 	#f00;
+@verde: 	#0a0;
+@amarillo: #ff0;
+@azul: 	#33d;
+@cyan: 	#0ff;
+@magenta: 	#f0f;
+@negro: 	#000;
+
+
+
+.btn{
+	padding:.8em;
+	display:block;
+	clear:none;
+	float:left;
+	margin:1em;
+	border-radius:3px;
+	border:solid 1px #ddd;
+	color:#fff;
+	background:#444;
+}
+
+.btn.rojo{
+	color:#fff;
+	background:@rojo;
+	&:hover{
+		background:lighten(@rojo, 20%);
+	}
+}
+.btn.verde{
+	color:#fff;
+	background:@verde;
+	&:hover{
+		background:darken(@verde, 10%);
+	}
+}
+.btn.amarillo{
+	color:#000;
+	background:@amarillo;
+	&:hover{
+		color:#fff;
+		background:spin(@amarillo, 180);
+	}
+}
+.btn.azul{
+	color:#fff;
+	background:@azul;
+	&:hover{
+		background:saturate(@azul, 30%);
+	}
+}
+.btn.cyan{
+	color:#00f;
+	background:@cyan;
+	&:hover{
+		background:desaturate(@cyan, 50%);
+	}
+}
+.btn.magenta{
+	color:#fff;
+	background:fadeout(@magenta, 50%);
+	&:hover{
+		background:fadein(@magenta, 30%);
+	}
+}
+.btn.negro{
+	color:#fff;
+	background:@negro;
+	&:hover{
+		background:fadeout(@negro, 50%);
+	}
+}
